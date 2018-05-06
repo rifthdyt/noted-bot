@@ -49,9 +49,6 @@ bot.on("message", async message => {
 
 });
 
-});
-
-
 bot.on("message", async message => {
 
     if (message.author.bot) return;
@@ -67,8 +64,6 @@ bot.on("message", async message => {
     }
 
 });
-
-
 
 bot.on("message", async message => {
 
