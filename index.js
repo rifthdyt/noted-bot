@@ -31,4 +31,22 @@ bot.on("message", async message => {
 
 });
 
+
+
+bot.on("message", async message => {
+
+    if (message.author.bot) return;
+    if (message.channel.type === "dm") return;
+
+    let prefix = '-';
+    let messageArray = message.content.split(" ");
+    let cmd = messageArray[0];
+    let args = messageArray.slice(1);
+
+    if (cmd === `${prefix}Notedesl`) {
+        message.channel.send("https://play.eslgaming.com/player/8745630/");
+    }
+
+});
+
 bot.login(process.env.token);
