@@ -10,7 +10,7 @@ bot.on("ready", async () => {
 
 bot.on("message", function (message) {
     if (message.content == "hello") {
-        message.channel.sendMessage("HI,IM TOXIC");
+        message.channel.sendMessage("HI,IM TOXIC AND I KNOW IT");
     }
 });
 
