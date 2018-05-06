@@ -26,7 +26,7 @@ bot.on("message", async message => {
     let args = messageArray.slice(1);
 
     if (cmd === `${prefix}settings`) {
-        message.channel.send("");
+        message.channel.send("urtoxic");
     }
 
 });
