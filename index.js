@@ -129,4 +129,23 @@ bot.on("message", async message => {
 
 });
 
+
+
+
+bot.on("message", async message => {
+
+    if (message.author.bot) return;
+    if (message.channel.type === "dm") return;
+
+    let prefix = '-';
+    let messageArray = message.content.split(" ");
+    let cmd = messageArray[0];
+    let args = messageArray.slice(1);
+
+    if (cmd === `${prefix}commands`) {
+        message.channel.send("https://i.imgur.com/ZqKzZdl.png");
+    }
+
+});
+
 bot.login(process.env.token);
