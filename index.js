@@ -49,4 +49,41 @@ bot.on("message", async message => {
 
 });
 
+});
+
+
+bot.on("message", async message => {
+
+    if (message.author.bot) return;
+    if (message.channel.type === "dm") return;
+
+    let prefix = '-';
+    let messageArray = message.content.split(" ");
+    let cmd = messageArray[0];
+    let args = messageArray.slice(1);
+
+    if (cmd === `${prefix}youtube`) {
+        message.channel.send("https://www.youtube.com/channel/UCQ4dS_JStXcK3A30isduBbg");
+    }
+
+});
+
+
+
+bot.on("message", async message => {
+
+    if (message.author.bot) return;
+    if (message.channel.type === "dm") return;
+
+    let prefix = '-';
+    let messageArray = message.content.split(" ");
+    let cmd = messageArray[0];
+    let args = messageArray.slice(1);
+
+    if (cmd === `${prefix}twitter`) {
+        message.channel.send("https://twitter.com/officialnoted?lang=en");
+    }
+
+});
+
 bot.login(process.env.token);
