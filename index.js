@@ -8,6 +8,48 @@ bot.on("ready", async () => {
 }
 );
 
+bot.on('guildMemberAdd', member => {
+    let channel = member.guild.channels.find('name', 'welcome');
+    let memberavatar = member.user.avatarURL
+    if (!channel) return;
+    let embed = new Discord.RichEmbed()
+        .setColor('RANDOM')
+        .setThumbnail(memberavatar)
+        .addField(':bust_in_silhouette: | name : ', `${member}`)
+        .addField(':microphone2: | You joined our server!', `WELCOME TO THE FLICK CLUB MA BOII, ${member}`)
+        .addField(':id: | User :', "**[" + `${member.id}` + "]**")
+        .addField(':family_mwgb: | You are now a member!', `${member.guild.memberCount}`)
+        .addField("Name", `<@` + `${member.id}` + `>`, true)
+        .addField('Server', `${member.guild.name}`, true)
+        .setFooter(`**${member.guild.name}**`)
+        .setTimestamp()
+
+    channel.sendEmbed(embed);
+});
+bot.on('guildMemberAdd', member => {
+
+    console.log(`${member}`, "has joined" + `${member.guild.name}`)
+
+});
+
+
+bot.on('guildMemberRemove', member => {
+    let channel = member.guild.channels.find('name', 'welcome');
+    let memberavatar = member.user.avatarURL
+    if (!channel) return;
+    let embed = new Discord.RichEmbed()
+        .setColor('RANDOM')
+        .setThumbnail(memberavatar)
+        .addField('Name:', `${member}`)
+        .addField('Has left the server', ';(')
+        .addField('BYE BYE :(. :(', 'WHY DO U LEAVE THE FLICK GOD ALONE :(')
+        .addField('Members', `${member.guild.memberCount}` + " Members")
+        .setFooter(`**${member.guild.name}`)
+        .setTimestamp()
+
+    channel.sendEmbed(embed);
+});
+
 bot.on("message", function (message) {
     if (message.content == "hello") {
         message.channel.sendMessage("HI,IM TOXIC AND I KNOW IT");
