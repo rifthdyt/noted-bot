@@ -75,7 +75,9 @@ bot.on("message", async message => {
     .addField("Sensitivity>> 20/20")
     .addField("ADS>> 100")
     .addField("FOV>> 90")
-    .addField(">> ")
+    .addField("default multiplier.")
+    .addField("default windows 6/11.")
+    .addField("Noteds Equipment")
     .addField(">> ")
     .setColor(0xff0000)
    message.channel.sendEmbed(emebed);
