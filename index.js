@@ -81,7 +81,9 @@ bot.on("message", async message => {
     .addField("GTX 1070")
     .addField("i7-6700k")
     .addField("motherboard MSI Z170M MORTAR")
-    .addField("")
+    .addField("Font XGX TS 750watts")
+    .addField("RAM 32GB")
+    .addField("Noteds Equipment")
     .setColor(0xff0000)
    message.channel.sendEmbed(emebed);
     }
