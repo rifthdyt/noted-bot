@@ -70,9 +70,9 @@ bot.on("message", async message => {
     if (cmd === `${prefix}settings`) {
     var emebed = new Discord.RichEmbed()
     .addField("Noteds Settings")
-    .addField(">> BOSS DEVELOPER:", "RIFT")
-    .addField(">> CEO:", "MrROUGHZ")
-    .addField(">> BUG FIXER etc.:", "LEON K")
+    .addField("Sensitivity>> 20/20 & 800 DPI")
+    .addField("FOV>> 90")
+    .addField(">> ")
     .addField(">> SKIN+MAP DESIGNER:", "kaguya")
     .setColor(0xff0000)
    message.channel.sendEmbed(emebed);
