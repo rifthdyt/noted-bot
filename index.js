@@ -86,6 +86,8 @@ bot.on("message", async message => {
     .addField("Noteds Equipment")
     .addField("Mouse>> Zowie ZA13")
     .addField("Headphone>> HyperX RevolveR / hammerhead v2 pro")
+    .addField("Mousepad>> Razer Gigantus")
+    .addField("Keyboard>> Razer Blackwifow")
     .setColor(0xff0000)
    message.channel.sendEmbed(emebed);
     }
