@@ -71,6 +71,8 @@ bot.on("message", async message => {
     var emebed = new Discord.RichEmbed()
     .addField("Noteds Settings")
     .addField("Sensitivity>> 20/20 & 800 DPI")
+    .addField("Aspect Ratio>> 16:9")
+    
     .addField("FOV>> 90")
     .addField(">> ")
     .addField(">> SKIN+MAP DESIGNER:", "kaguya")
