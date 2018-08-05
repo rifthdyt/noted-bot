@@ -84,6 +84,8 @@ bot.on("message", async message => {
     .addField("Font XGX TS 750watts")
     .addField("RAM 32GB")
     .addField("Noteds Equipment")
+    .addField("Mouse>> Zowie ZA13")
+    .addField("Headphone>>")
     .setColor(0xff0000)
    message.channel.sendEmbed(emebed);
     }
