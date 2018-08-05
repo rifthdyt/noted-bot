@@ -77,8 +77,9 @@ bot.on("message", async message => {
     .addField("FOV>> 90")
     .addField("default multiplier.")
     .addField("default windows 6/11.")
-    .addField("Noteds Equipment")
-    .addField(">> ")
+    .addField("Noteds PC Specs")
+    .addField("GTX 1070")
+    .addField("i7-6700k")
     .setColor(0xff0000)
    message.channel.sendEmbed(emebed);
     }
