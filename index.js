@@ -68,7 +68,14 @@ bot.on("message", async message => {
     let args = messageArray.slice(1);
 
     if (cmd === `${prefix}settings`) {
-        message.channel.send("https://i.imgur.com/qvSpHrM.png");
+    var emebed = new Discord.RichEmbed()
+    .addField("Noteds Settings")
+    .addField(">> BOSS DEVELOPER:", "RIFT")
+    .addField(">> CEO:", "MrROUGHZ")
+    .addField(">> BUG FIXER etc.:", "LEON K")
+    .addField(">> SKIN+MAP DESIGNER:", "kaguya")
+    .setColor(0xff0000)
+   message.channel.sendEmbed(emebed);
     }
 
 });
