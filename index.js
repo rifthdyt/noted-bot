@@ -70,12 +70,13 @@ bot.on("message", async message => {
     if (cmd === `${prefix}settings`) {
     var emebed = new Discord.RichEmbed()
     .addField("Noteds Settings")
-    .addField("Sensitivity>> 20/20 & 800 DPI")
+    .addField("Res>> 1920x1080")
     .addField("Aspect Ratio>> 16:9")
-    
+    .addField("Sensitivity>> 20/20")
+    .addField("ADS>> 100")
     .addField("FOV>> 90")
     .addField(">> ")
-    .addField(">> SKIN+MAP DESIGNER:", "kaguya")
+    .addField(">> ")
     .setColor(0xff0000)
    message.channel.sendEmbed(emebed);
     }
