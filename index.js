@@ -80,6 +80,8 @@ bot.on("message", async message => {
     .addField("Noteds PC Specs")
     .addField("GTX 1070")
     .addField("i7-6700k")
+    .addField("motherboard MSI Z170M MORTAR")
+    .addField("")
     .setColor(0xff0000)
    message.channel.sendEmbed(emebed);
     }
