@@ -1,12 +1,13 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 
-bot.on("ready", async () => {
-    console.log(`${bot.user.username} is online!`);
-    bot.user.setActivity(`FLICKING NOOBS`);
+client.user.setActivity("with depression", {
+  type: "STREAMING",
+  url: "https://www.twitch.tv/monstercat"
+});
 
-}
-);
+
+
 
 bot.on('guildMemberAdd', member => {
     let channel = member.guild.channels.find('name', 'welcome');
