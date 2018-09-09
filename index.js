@@ -114,7 +114,7 @@ bot.on("message", async message => {
     let args = messageArray.slice(1);
 
     if (cmd === `${prefix}catpics`) {
-        message.channel.send("http://random.cat/view/");
+        message.channel.send("http://random.cat/view/165");
     }
 
 });
