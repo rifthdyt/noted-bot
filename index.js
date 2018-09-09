@@ -109,13 +109,13 @@ bot.on("message", async message => {
     if (message.author.bot) return;
     if (message.channel.type === "dm") return;
 
-    let prefix = '-';
+    let prefix = '?';
     let messageArray = message.content.split(" ");
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
 
-    if (cmd === `${prefix}Notedesl`) {
-        message.channel.send("https://play.eslgaming.com/player/8745630/");
+    if (cmd === `${prefix}version`) {
+        message.channel.send("version 0.5");
     }
 
 });
@@ -163,7 +163,7 @@ bot.on("message", async message => {
     let args = messageArray.slice(1);
 
     if (cmd === `${prefix}twitch`) {
-        message.channel.send("https://www.twitch.tv/officialnoted");
+        message.channel.send("https://m.twitch.tv/abbyyyyyxo");
     }
 
 });
