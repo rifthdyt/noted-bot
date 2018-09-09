@@ -1,9 +1,13 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 
-client.user.setActivity("with depression", {
-  type: "STREAMING",
-  url: "https://www.twitch.tv/monstercat"
+bot.on('ready', () => {
+    bot.user.setStatus('available')
+    bot.user.setPresence({
+        game: {
+            name: 'with depression',
+            type: "STREAMING",
+            url: "https://www.twitch.tv/monstercat"
 });
 
 
