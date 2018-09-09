@@ -1,13 +1,9 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 
-bot.on('ready', () => {
-    bot.user.setStatus('available')
-    bot.user.setPresence({
-        game: {
-            name: 'with depression',
-            type: "STREAMING",
-            url: "https://www.twitch.tv/monstercat"
+bot.on("ready", async () => {
+  console.log(`${bot.user.username} is online!`);
+  bot.user.setActivity(`Twitter`);
 });
 
 
