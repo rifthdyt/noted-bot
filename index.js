@@ -23,7 +23,7 @@ bot.on('guildMemberAdd', member => {
         .setColor('RANDOM')
         .setThumbnail(memberavatar)
         .addField(':bust_in_silhouette: | name : ', `${member}`)
-        .addField(':microphone2: | You joined our server!', `WELCOME TO THE FLICK CLUB MA BOII, ${member}`)
+        .addField(':microphone2: | You joined ABBYS server!', `WELCOME ON ABBYS SERVER, ${member}`)
         .addField(':id: | User :', "**[" + `${member.id}` + "]**")
         .addField(':family_mwgb: | You are now a member!', `${member.guild.memberCount}`)
         .addField("Name", `<@` + `${member.id}` + `>`, true)
@@ -48,7 +48,7 @@ bot.on('guildMemberRemove', member => {
         .setColor('RANDOM')
         .setThumbnail(memberavatar)
         .addField('Name:', `${member}`)
-        .addField('Has left the server', ';(')
+        .addField('Has Been Banned by Battleye™', ';(')
         .addField('BYE BYE :(. :(', 'WHY DO U LEAVE THE FLICK GOD ALONE :(')
         .addField('Members', `${member.guild.memberCount}` + " Members")
         .setFooter(`**${member.guild.name}`)
@@ -59,7 +59,7 @@ bot.on('guildMemberRemove', member => {
 
 bot.on("message", function (message) {
     if (message.content == "hello") {
-        message.channel.sendMessage("HI,IM TOXIC AND I KNOW IT");
+        message.channel.sendMessage("China!");
     }
 });
 
