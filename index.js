@@ -16,7 +16,7 @@ bot.on('ready', () => {
 
 
 bot.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', 'welcome');
+    let channel = member.guild.channels.find('name', 'noobs');
     let memberavatar = member.user.avatarURL
     if (!channel) return;
     let embed = new Discord.RichEmbed()
@@ -109,7 +109,7 @@ bot.on("message", async message => {
     if (message.author.bot) return;
     if (message.channel.type === "dm") return;
 
-    let prefix = '-';
+    let prefix = '?';
     let messageArray = message.content.split(" ");
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
@@ -141,13 +141,13 @@ bot.on("message", async message => {
     if (message.author.bot) return;
     if (message.channel.type === "dm") return;
 
-    let prefix = '-';
+    let prefix = '?';
     let messageArray = message.content.split(" ");
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
 
-    if (cmd === `${prefix}facebook`) {
-        message.channel.send("https://www.facebook.com/officialnoted/");
+    if (cmd === `${prefix}owner`) {
+        message.channel.send("RIFT aka. the invisible dude");
     }
 
 });
