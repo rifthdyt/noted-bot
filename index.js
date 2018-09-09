@@ -5,9 +5,9 @@ bot.on('ready', () => {
     bot.user.setStatus('available')
     bot.user.setPresence({
         game: {
-            name: 'with depression',
+            name: 'abbyyyyyxo',
             type: "STREAMING",
-            url: "https://www.twitch.tv/monstercat"
+            url: "https://m.twitch.tv/abbyyyyyxo/"
         }
     });
 });
