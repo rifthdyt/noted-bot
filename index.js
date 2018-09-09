@@ -41,7 +41,7 @@ bot.on('guildMemberAdd', member => {
 
 
 bot.on('guildMemberRemove', member => {
-    let channel = member.guild.channels.find('name', 'welcome');
+    let channel = member.guild.channels.find('name', 'noobs');
     let memberavatar = member.user.avatarURL
     if (!channel) return;
     let embed = new Discord.RichEmbed()
