@@ -5,7 +5,7 @@ bot.on('ready', () => {
     bot.user.setStatus('available')
     bot.user.setPresence({
         game: {
-            name: 'abbyyyyyxo',
+            name: 'Subscribe abbyyyyyxo!',
             type: "STREAMING",
             url: "https://m.twitch.tv/abbyyyyyxo/"
         }
