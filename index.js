@@ -49,7 +49,7 @@ bot.on('guildMemberRemove', member => {
         .setThumbnail(memberavatar)
         .addField('Name:', `${member}`)
         .addField('Has Been Banned by Battleye™', ';(')
-        .addField('BYE BYE :(. :(', 'WHY DO U LEAVE THE FLICK GOD ALONE :(')
+        .addField('BYE BYE :(. :(', 'Shitty Mexican Dude')
         .addField('Members', `${member.guild.memberCount}` + " Members")
         .setFooter(`**${member.guild.name}`)
         .setTimestamp()
