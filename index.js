@@ -114,8 +114,8 @@ bot.on("message", async message => {
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
 
-    if (cmd === `${prefix}twitter`) {
-        message.channel.send("https://twitter.com/officialnoted?lang=en");
+    if (cmd === `${prefix}invisible`) {
+        message.channel.send("_ _");
     }
 
 });
