@@ -58,48 +58,15 @@ bot.on('guildMemberRemove', member => {
 });
 
 bot.on("message", function (message) {
-    if (message.content == "hello") {
-        message.channel.sendMessage("China!");
+    if (message.content == "@abby.#4806") {
+        message.channel.sendMessage("KILL THIS CHINA DUDE!");
     }
 });
 
-
-bot.on("message", async message => {
-
-    if (message.author.bot) return;
-    if (message.channel.type === "dm") return;
-
-    let prefix = '-';
-    let messageArray = message.content.split(" ");
-    let cmd = messageArray[0];
-    let args = messageArray.slice(1);
-
-    if (cmd === `${prefix}settings`) {
-    var emebed = new Discord.RichEmbed()
-    .addField("Noteds Settings")
-    .addField("Res>> 1920x1080")
-    .addField("Aspect Ratio>> 16:9")
-    .addField("Sensitivity>> 20/20")
-    .addField("ADS>> 100")
-    .addField("FOV>> 90")
-    .addField("default multiplier.")
-    .addField("default windows 6/11.")
-    .addField("Noteds PC Specs")
-    .addField("GTX 1070")
-    .addField("i7-6700k")
-    .addField("motherboard MSI Z170M MORTAR")
-    .addField("Font XGX TS 750watts")
-    .addField("RAM 32GB")
-    .addField("Noteds Equipment")
-    .addField("Mouse>> Zowie ZA13")
-    .addField("Headphone>> HyperX RevolveR / hammerhead v2 pro")
-    .addField("Mousepad>> Razer Gigantus")
-    .addField("Keyboard>> Razer Blackwifow")
-    .addField("Monitor>> BenqXL2420z")
-    .setColor(0xff0000)
-   message.channel.sendEmbed(emebed);
+bot.on("message", function (message) {
+    if (message.content == "hello") {
+        message.channel.sendMessage("China!");
     }
-
 });
 
 
@@ -196,25 +163,6 @@ bot.on("message", async message => {
 
     if (cmd === `${prefix}NotedStats`) {
         message.channel.send("https://r6stats.com/stats/uplay/noted.");
-    }
-
-});
-
-
-
-
-bot.on("message", async message => {
-
-    if (message.author.bot) return;
-    if (message.channel.type === "dm") return;
-
-    let prefix = '-';
-    let messageArray = message.content.split(" ");
-    let cmd = messageArray[0];
-    let args = messageArray.slice(1);
-
-    if (cmd === `${prefix}commands`) {
-        message.channel.send("https://i.imgur.com/ZqKzZdl.png");
     }
 
 });
