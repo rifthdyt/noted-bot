@@ -58,7 +58,7 @@ bot.on('guildMemberRemove', member => {
 });
 
 bot.on("message", function (message) {
-    if (message.content == "@abby.#4806") {
+    if (message.content == "mexico") {
         message.channel.sendMessage("KILL THIS CHINA DUDE!");
     }
 });
