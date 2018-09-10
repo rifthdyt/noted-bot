@@ -124,8 +124,8 @@ bot.on("message", async message => {
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
 
-    if (cmd === `${prefix}twitch`) {
-        message.channel.send("https://m.twitch.tv/abbyyyyyxo");
+    if (cmd === `${prefix}despacito`) {
+        message.channel.send("https://www.youtube.com/watch?v=kJQP7kiw5Fk");
     }
 
 });
