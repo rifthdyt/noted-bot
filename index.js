@@ -1,15 +1,9 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 
-bot.on('ready', () => {
-    bot.user.setStatus('available')
-    bot.user.setPresence({
-        game: {
-            name: 'Subscribe abbyyyyyxo!',
-            type: "STREAMING",
-            url: "https://m.twitch.tv/abbyyyyyxo/"
-        }
-    });
+bot.on("ready", async () => {
+  console.log(`${bot.user.username} is online!`);
+  bot.user.setActivity(`Build a Wall!`);
 });
 
 
